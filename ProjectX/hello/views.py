@@ -10,3 +10,8 @@ def index(request,):
 #returns hello brian when the url is visited
 def brian(request):
     return HttpResponse("Hello, Brian")
+
+def greet(request, name):
+    return render(request, "hello/greet.html", {
+        "name": name.capitalize()
+    })    
