@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', include ("hello.urls")),
     path('NewYear/', include ("NewYear.urls"))
+    path('taskmanager/', include("taskmanager.urls"))
 ]
