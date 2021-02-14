@@ -4,6 +4,7 @@
 
     <h1> Add task</h1>
         <form action="{% url 'taskmanager:add '%}" method="post">
+            {% csrf_token %}
             <input type="text" name="taskmanager">
             <input type="Submit">
         </form>
