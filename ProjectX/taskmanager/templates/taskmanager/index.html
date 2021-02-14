@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>task manager</title>
-    </head>
-    <body>
-        <ul>
-            {% for task in tasks %}
-                <li>{{ task }}</li>
-            {% endfor %}
-        </ul>
+{% extends "taskmanager/layout.html"%}
 
-    </body>
-</html>
+{% block body %}
+    <ul>
+        {% for task in tasks %}
+            <li>{{ task }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
